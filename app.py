@@ -73,8 +73,8 @@ def send_email():
 def schedule_emails():
     schedule.clear()
 
-    schedule.every().day.at("9:00").do(send_email)
-    schedule.every().day.at("9:05").do(send_email)
+    schedule.every().day.at("10:00").do(send_email)
+    schedule.every().day.at("2:05").do(send_email)
     schedule.every().day.at("9:07").do(send_email)
 
     print("Scheduler started...")
